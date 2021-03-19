@@ -1,0 +1,7 @@
+<h1>Comments</h1>
+<ul>
+    <% comments.forEach(function(com){ %>
+        <li><%= com.comment %> - <b><%= com.username %></b> - <a href="/comments/<%= com.id %>">view</a> </li>
+    <% }) %>
+    <a href="/comments/new">New Comment</a>
+</ul>

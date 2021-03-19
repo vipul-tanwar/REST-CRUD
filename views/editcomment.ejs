@@ -1,0 +1,15 @@
+<form action="/comments/<%= com.id%>?_method=PATCH" method="POST">
+    <section>
+        <label for="">Enter Username</label>
+        <input type="text" name="username" value="<%= com.username%>">
+    </section>
+    <br>
+    <section>
+        <label for="">Enter comment</label><br>
+        <textarea  cols="30" rows="10" name="comment" ><%= com.comment%></textarea>  
+    </section>
+  
+    <br>
+    <button type="submit">Submit</button>
+</form>
+<a href="/comments">Back to Comments Page</a>

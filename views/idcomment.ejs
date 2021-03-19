@@ -1,0 +1,7 @@
+<h3>Username : <%= com.username %></h3>
+<h2>Comment  <%= com.comment %></h2>
+<a href="/comments/<%= com.id %>/edit">Edit Comment</a>
+<form action="/comments/<%= com.id %>?_method=DELETE" method="POST">
+    <button>Delete Comment</button>
+</form>
+<a href="/comments">Go back</a>
